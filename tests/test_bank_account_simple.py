@@ -3,7 +3,8 @@
 # we will do assertions
 # we need to test the happy path and the unhappy path
 
-# we 
+# command:
+# python3 -m unittest discover -s tests
 
 import unittest
 from bank_account_simple import BankAccount
