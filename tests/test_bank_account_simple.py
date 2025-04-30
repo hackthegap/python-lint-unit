@@ -22,7 +22,7 @@ class TestBankAccount (unittest.TestCase):
         self.account.withdraw(50)
         self.assertEqual(self.account.balance, 50)
 
-    def test_withdraw_failure(self):
+    def test_withdraw_more_than_we_have(self):
         with self.assertRaises(ValueError):    
             self.account.withdraw(1000) 
 
